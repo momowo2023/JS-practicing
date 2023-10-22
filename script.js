@@ -39,13 +39,53 @@ console.log(x);
 const now = 2023
 const myAge = now - 1994;
 const ageBrother = now - 1998;
-console.log(myAge);
-console.log(ageBrother);
+//console.log(myAge);
+//console.log(ageBrother);
 console.log(myAge,ageBrother);
 
-console.log(firstName+lastName);
-console.log(firstName +" "+lastName+""+firstName)
+//console.log(firstName+lastName);
+//console.log(firstName +" "+lastName+""+firstName)
 
-console.log(myAge < ageBrother);
-console.log(myAge >= 24);
-console.log(myAge - 10 <= ageBrother+20);
+//console.log(myAge < ageBrother);
+//console.log(myAge >= 24);
+//console.log(myAge - 10 <= ageBrother+20);
+
+const triangleOne = (10*13)/2;
+const triangleTwo = (16.5*20.3)/2;
+
+console.log(triangleOne, triangleTwo);
+console.log(triangleOne >= triangleTwo);
+
+const triangleOn = 10*2.4/2.5;
+const triangleTw = (10*2.4)/2.5;
+const triangleT = 3*6/3;
+const triangleF = (3*6)/3;
+console.log(triangleOn, triangleTw, triangleT, triangleF);
+
+const triangleThree = (16.5*20.3)/2;
+const triangleFour = (20.3*16.5)/2
+
+//console.log(triangleThree, triangleFour);
+//console.log(triangleThree >= triangleFour);
+
+
+const triangleFive = (7.8*5.6)/2;
+const triangleSix = (9.3*12.4)/2
+//console.log(triangleFive, triangleSix);
+//console.log(triangleFive >=triangleSix);
+
+const nameMy = "Mowei";
+const birthMy = 1994;
+const people = "cool kid";
+
+const Meggen = 
+"My name is " + nameMy + "," + (now - birthMy) + " years old,"  +" I am a " + people + "."
+
+console.log(Meggen);
+
+const MeggenNew = 
+`My name is ${nameMy}, 
+${now-birthMy} years old, 
+I am a ${people} !`;
+
+console.log(MeggenNew);
