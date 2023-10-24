@@ -89,3 +89,51 @@ ${now-birthMy} years old,
 I am a ${people} !`;
 
 console.log(MeggenNew);
+
+// 1.製作年紀容器
+
+//2.定義大腦成熟年紀
+
+//3.比較是否成熟
+
+//4.下指令
+
+const agePerson = 24;
+
+const ageLife = agePerson >= 25; 
+
+if (ageLife){
+    console.log("Congratulations! Now your brain is fully developed! ")
+} else{
+    console.log("That's okay to be silly");
+}
+
+
+
+if ( agePerson >= 25){
+    console.log("Congratulationsn! Now your brain is fully developed! ");
+} else {
+    
+    const yearWait = 25 - agePerson;
+    console.log( `You still have ${yearWait} year (or your whole life) to be silly.`);
+}
+
+
+
+if ( agePerson >= 25){
+    console.log("Congratulationsn! Now your brain is fully developed! ");
+} else {
+    
+    const yearWait = 25 - agePerson;
+
+
+
+    console.log( `You still have ${yearWait} year (or your whole life) to be silly.`);
+}
+
+const  yearMany =
+(if ( yearWait >= 1 ){
+    console.log("years");
+}else {
+    console.log("year"); 
+})
