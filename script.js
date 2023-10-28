@@ -179,3 +179,57 @@ const firstAge = calcAge(yearOfBirth[1]);
 const secondAge = calcAge(yearOfBirth[2]);
 
 console.log(firstAge, secondAge);
+
+function lemoncake(butter, lemon, flour){
+    const drizzle = `super nice ingredients which is ${butter} cups butter, ${lemon} cups lemonjuice and ${flour} cups flour`;
+    return drizzle;
+}
+
+const amazingcake =lemoncake(3, 2, 1) ;
+console.log(amazingcake);
+
+function callcAge(a1, a2){
+    const resAge = a1 + a2;
+    return resAge;
+}
+
+console.log(callcAge(29, 41));
+
+// 製作菜單 製作oblect, 使用時都用.
+const meggen = {
+    firstName:"Meg",
+    lastame: "Wu",
+    age: 2023-1994,
+    job:"student",
+};
+
+//console.log(meggen);
+
+console.log(meggen.age);
+
+const info = prompt(
+    "about meggen"
+);
+//console.log(info);
+console.log(meggen[info]);
+
+// 記得避免 空字的錯誤，要加上if else
+if (meggen[info]){
+    console.log(meggen[info]);
+} else{
+    console.log("say again");
+}
+
+/*
+const meggen = {
+    firstName:"Meg",
+    lastame: "Wu",
+    age: 2023-1994,
+    job:"student",
+};
+*/
+
+meggen.cat = "pittpana";
+meggen. location = "öland";
+
+console.log(meggen);
