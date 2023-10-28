@@ -103,37 +103,79 @@ const agePerson = 24;
 const ageLife = agePerson >= 25; 
 
 if (ageLife){
-    console.log("Congratulations! Now your brain is fully developed! ")
+    //console.log("Congratulations! Now your brain is fully developed! ")
 } else{
     console.log("That's okay to be silly");
 }
 
 
-
-if ( agePerson >= 25){
-    console.log("Congratulationsn! Now your brain is fully developed! ");
-} else {
-    
-    const yearWait = 25 - agePerson;
-    console.log( `You still have ${yearWait} year (or your whole life) to be silly.`);
-}
-
-
-
-if ( agePerson >= 25){
-    console.log("Congratulationsn! Now your brain is fully developed! ");
-} else {
-    
-    const yearWait = 25 - agePerson;
-
-
-
-    console.log( `You still have ${yearWait} year (or your whole life) to be silly.`);
-}
-
+/*
 const  yearMany =
 (if ( yearWait >= 1 ){
     console.log("years");
 }else {
-    console.log("year"); 
-})
+    console.log("year"); 確認如何使years 也能變動
+ */
+
+
+if ( agePerson >= 25){
+    console.log("Congratulationsn! Now your brain is fully developed! ");
+} else {
+    
+    const yearWait = 25 - agePerson;
+    console.log( `You still have ${yearWait} year (or your whole life) to be silly.`);
+}
+
+const day = "sunday";
+
+if (day === "monday") {
+    console.log("that's blue day");
+} else if ( day === "tuesday"){
+    console.log("thats red day");
+} else if ( day=== "wednesday"){
+    console.log("thats yellow day");
+} else if (day === "thursday"){
+    console.log("that's green day");
+}else if (day === "freday"){
+    console.log("that's purple day");
+}else if (day === "saturday" || day === "sunday"){
+    console.log("thats happy day");
+}else{
+    console.log("thats cool day");
+}
+
+agePerson >= 25 ? console.log ("Congratulationsn! Now your brain is fully developed!"):console.log("That's okay to be silly");
+
+const ageBrain = agePerson >= 25 ? "Congratulationsn!" : "That's okay";
+console.log(ageBrain);
+
+console.log(`Your brain is ${agePerson >= 25 ? "fully developed!" : "still growing"}`);
+
+
+
+
+let n = "1" + 1;
+n = n - 1 ;
+console.log(n);
+
+const colour = ["blue", "orange", "green", "purple"];
+
+console.log(colour[2]);
+
+console.log(colour.length);
+
+console.log(colour[colour.length-1]);
+
+
+
+
+const calcAge = function (birthYear) {
+    return 2023 - birthYear;
+}
+
+const yearOfBirth = [2022, 1994, 1982];
+
+const firstAge = calcAge(yearOfBirth[1]);
+const secondAge = calcAge(yearOfBirth[2]);
+
+console.log(firstAge, secondAge);
