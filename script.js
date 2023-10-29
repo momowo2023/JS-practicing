@@ -180,6 +180,8 @@ const secondAge = calcAge(yearOfBirth[2]);
 
 console.log(firstAge, secondAge);
 
+//使用function 
+
 function lemoncake(butter, lemon, flour){
     const drizzle = `super nice ingredients which is ${butter} cups butter, ${lemon} cups lemonjuice and ${flour} cups flour`;
     return drizzle;
@@ -196,26 +198,27 @@ function callcAge(a1, a2){
 console.log(callcAge(29, 41));
 
 // 製作菜單 製作oblect, 使用時都用.
-const meggen = {
+const eggen = {
     firstName:"Meg",
     lastame: "Wu",
-    age: 2023-1994,
+    age: 1994,
     job:"student",
+    hasID: false,
 };
 
 //console.log(meggen);
 
-console.log(meggen.age);
+console.log(eggen.age);
 
-const info = prompt(
+//const info = prompt(
     "about meggen"
-);
+//);
 //console.log(info);
-console.log(meggen[info]);
+//console.log(meggen[info]);
 
 // 記得避免 空字的錯誤，要加上if else
-if (meggen[info]){
-    console.log(meggen[info]);
+/*if (eggen[info]){
+    console.log(eggen[info]);
 } else{
     console.log("say again");
 }
@@ -229,7 +232,87 @@ const meggen = {
 };
 */
 
-meggen.cat = "pittpana";
-meggen. location = "öland";
+eggen.cat = "pittpana";
+eggen. location = "öland";
 
-console.log(meggen);
+//console.log(meggen);
+
+const meggen = {
+    firstName:"Meg",
+    lastame: "Wu",
+    age: 1994,
+    job:"student",
+    hasID: false,
+    calcAge: function (){
+        console.log(this);
+        return 2023 - this.age;
+    },
+    getSummary: function (){
+        return `${this.firstName} is a ${this.calcAge()} years old ${this.job}. 
+        And she has ${this.hasID ? "a" : "no"} ID.`
+    } 
+};
+
+//console.log(meggen.getSummary());
+
+
+function describself(name, age, favouriteFood){
+    return `My name is ${name} and I am ${age} years old. My favo food is ${favouriteFood}. `;
+}
+
+const person1 =  describself("kit", 41, "pizza");
+const person2 = describself("meg", 29, "veg");
+const person3 = describself("panna", 3, "soup");
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
+
+
+const me = {
+    firstName: "momo",
+    lastName: "wo",
+    age: 29,
+    job: "student",
+    pets: false,
+
+    logSelf:function(){
+        return `My name is ${this.firstName} ${this.lastName} and 
+    I'm ${this.age} years old ${this.job}. 
+    I have ${this.pets ? "a" : "no"} pets at home. `;
+    }
+}
+
+console.log(me.logSelf());
+
+//
+
+function calTip(billAmount){
+    let tipPercentage;
+    if(billAmount <50){
+        tipPercentage = 0;
+    
+    }else if (billAmount >= 50 && billAmount <= 300){
+        tipPercentage = 10;
+    
+    } else{
+        tipPercentage = 15;
+    }
+
+    const tipAmount = (tipPercentage / 100) * billAmount;
+    const totalAmount = tipAmount + billAmount ;
+
+    return `The total amount of the bill is ${billAmount}. The tip % is therefore ${tipPercentage}% and the total amount to pay including tip is ${totalAmount}.`;
+
+}
+
+// test the function with different values
+const bill1 = 265;
+const bill2 = 80;
+const bill3 = 560;
+const bill4 = 30;
+
+ console.log(calTip(bill1));
+ console.log(calTip(bill2));
+ console.log(calTip(bill3));
+ console.log(calTip(bill4));
